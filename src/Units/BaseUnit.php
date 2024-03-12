@@ -19,4 +19,16 @@ abstract class BaseUnit
      * @var string $unitType
      */
     protected string $unitType;
+
+    public function setValue(float $value): void
+    {
+        $this->value = $value;
+    }
+
+    public function getValue(): float
+    {
+        return $this->value;
+    }
+
+    abstract public function getUnitType(): string;
 }
